@@ -1,0 +1,16 @@
+﻿<Window x:Class="musiclibrary2017.SingersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:musiclibrary2017"
+        mc:Ignorable="d"
+        Title="Музыкальная библиотека" Height="500" Width="600">
+    <Grid>
+        <ListBox Name="listBoxSingers" DisplayMemberPath="Info" Margin="10 10 10 45" SelectionChanged="listBoxSingers_SelectionChanged"></ListBox>
+        <Button Name="buttonAdd" Width="100" Height="25" 
+                HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10 0 0 10" Click="buttonAdd_Click">Добавить</Button>
+        <Button Name="buttonRemove" Width="100" Height="25"
+                HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="120 0 0 10" IsEnabled="False" Click="buttonRemove_Click">Удалить</Button>
+    </Grid>
+</Window>
